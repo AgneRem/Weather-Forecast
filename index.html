@@ -12,13 +12,20 @@
     <div class="text-center">
       <h1>Show the Local Weather</h1>
       <h3>Front End Developer Project</h3>
-      <ul class="list-unstyled">
-        <li class="btn btn-info" id="city"></li>
-        <li class="btn btn-info" id="weatherType"></li>
-        <li class="btn btn-info" id="fTemp"></li>
-        <li class="btn btn-info" id="windSpeed"></li>
-      </ul>
+      <div class="temperature row">
+        <div class="col-md-6" id="weatherIcon">
+
+        </div>
+        <div class="col-md-6">
+          <p id="fTemp"></p>
+        </div>
     </div>
+  <ul class="list-unstyled">
+  <li class="btn btn-info" id="city"></li>
+  <li class="btn btn-info" id="weatherType"></li>
+  <li class="btn btn-info" id="windSpeed"></li>
+</ul>
+</div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
