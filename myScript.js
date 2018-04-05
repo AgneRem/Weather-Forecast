@@ -46,21 +46,9 @@ $(document).ready(function(){
 
     //checks what icon should be used:
 
-    var weatherIcons = {
-      "clear sky": "01",
-      "few clouds": "02",
-      "scattered clouds": "03",
-      "broken clouds": "04",
-      "shower rain": "09",
-      "rain": "10",
-      "thunderstorm": "11",
-      "snow": "13",
-      "mist": "50"
-    }
+    var iconToUse = data.weather[0].icon;
 
-    var iconToUse = weatherIcons[weatherType];
-
-    $("#weatherIcon").html("<img src=\"http://openweathermap.org/img/w/" + iconToUse + "d.png\" alt=\"\">");
+    $("#weatherIcon").html("<img src=\"http://openweathermap.org/img/w/" + iconToUse + ".png\" alt=\"\">");
 
 
     //checks the temperature and changes background-picture
@@ -71,7 +59,7 @@ $(document).ready(function(){
       $('body').css('background-image', 'url("https://d11in36igezwwb.cloudfront.net/texts/images/000/001/226/original/clouds.jpg?1507822094")');
      } else if(cTemp > 10){
        $('body').css('background-image', 'url("https://media.gettyimages.com/photos/sunrise-on-yosemite-valley-picture-id505872990?b=1&k=6&m=505872990&s=612x612&w=0&h=Aq3nxnL41EENnMdGNy6RkN78e-vPZfe_kO1WoEoYgtU=")');
-      $('body').css("color", "white");
+      $('body').css("color", "black");
      } else if(cTemp > 0) {
       $('body').css("background-image", 'url("https://cdn.theatlantic.com/assets/media/img/mt/2017/06/GettyImages_675371680/lead_960.jpg?1498239007")');
       $("body").css("color", "white");
